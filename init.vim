@@ -1,0 +1,1 @@
+C:/Users/Jacob Willkomm/AppData/Local/nvim/init.vim
