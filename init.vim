@@ -1,4 +1,4 @@
-echo '(-.-)'
+echo '(-w-)'
 "---Plug-in manager---
 call plug#begin()
 "Themes
@@ -39,7 +39,6 @@ require'nvim-treesitter.configs'.setup {
 EOF
 
 "---Settings:
-set relativenumber
 set number
 
 "Leader:
@@ -49,7 +48,7 @@ let mapleader = ","
 nnoremap <leader>ev :e $MYVIMRC<CR>
 nnoremap <leader>vv :source $MYVIMRC<CR>
 
-autocmd FileType python noremap <buffer> <C-b> :!python %<CR>
+autocmd FileType python noremap <buffer> <C-b> :!python3 %<CR>
 "-Plugin Commands:
 "--WindowSwap Commands:
 nnoremap <leader>yw :call WindowSwap#MarkWindowSwap()<CR>
@@ -134,11 +133,6 @@ command! -bang -nargs=* PRg
 set clipboard=unnamed
 set showcmd
 
-if has('termguicolors')
-    set termguicolors
-endif
-
 " COLORSCHEME
 set background=dark
 colorscheme hybrid_reverse
-
